@@ -40,12 +40,6 @@
     },
     "publicIpAddressName": {
       "value": "W10-OraDB-2-ip"
-    },
-    "publicIpAddressType": {
-      "value": "Dynamic"
-    },
-    "publicIpAddressSku": {
-      "value": "Basic"
     }
   }
 }

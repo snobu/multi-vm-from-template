@@ -143,7 +143,7 @@
         "count": "[parameters('virtualMachineCount')]"
       },
       "properties": {
-        "publicIpAllocationMethod": "[parameters('publicIpAddressType')]"
+        "publicIpAllocationMethod": "Dynamic"
       },
       "sku": {
         "name": "Basic"
