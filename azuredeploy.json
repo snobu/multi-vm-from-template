@@ -83,7 +83,6 @@
         },
         "storageProfile": {
           "imageReference": {
-            "default": "/subscriptions/{SUBSCRIPTION_ID}/resourceGroups/{RESOURCE_GROUP}/providers/Microsoft.Compute/images/{IMAGE_NAME}",
             "id": "[parameters('imageId')]"
           },
           "osDisk": {
