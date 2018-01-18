@@ -1,0 +1,8 @@
+{
+   "DisplayName": "Deploy one or more VMs from a managed disk custom image",
+   "icon": "windowsVM",
+   "description": "This template allows you to deploy one or more virtual machines using your own managed disk custom image.",
+   "summary": "This template takes a handful of parameters, including the resourceId of your custom image.",
+   "githubUsername": "snobu",
+   "dateUpdated": "2017-01-18"
+}

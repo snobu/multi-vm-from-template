@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "westeurope"
+    },
+    "virtualMachineName": {
+      "value": "W10-OraDB-2"
+    },
+    "imageId": {
+      "value": "/subscriptions/{SUBSCRIPTION_ID}/resourceGroups/{RESOURCE_GROUP}/providers/Microsoft.Compute/images/{IMAGE_NAME}"
+    },
+    "virtualMachineCount": {
+      "value": 2 
+    },
+    "virtualMachineSize": {
+      "value": "Standard_D2s_v3"
+    },
+    "adminUsername": {
+      "value": "W10-OraDB-2"
+    },
+    "virtualNetworkName": {
+      "value": "Vms-vnet"
+    },
+    "networkInterfaceName": {
+      "value": "w10-oradb-2748"
+    },
+    "networkSecurityGroupName": {
+      "value": "W10-OraDB-2-nsg"
+    },
+    "adminPassword": {
+      "value": "#sughibughi66"
+    },
+    "diagnosticsStorageAccountName": {
+      "value": "vmsdiag496"
+    },
+    "diagnosticsStorageAccountId": {
+      "value": "/subscriptions/{SUBSCRIPTION_ID}/resourceGroups/{RESOURCE_GROUP}/providers/Microsoft.Storage/storageAccounts/{LOWERCASE_STORAGE_ACCOUNT_NAME}"
+    },
+    "subnetName": {
+      "value": "default"
+    },
+    "publicIpAddressName": {
+      "value": "W10-OraDB-2-ip"
+    },
+    "publicIpAddressType": {
+      "value": "Dynamic"
+    },
+    "publicIpAddressSku": {
+      "value": "Basic"
+    }
+  }
+}
