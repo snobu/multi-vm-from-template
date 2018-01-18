@@ -32,6 +32,9 @@
     },
     "subnetName": {
       "type": "string"
+    },
+    "diagnosticsStorageAccountName": {
+      "type": "string"
     }
   },
   "variables": {
