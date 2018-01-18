@@ -109,6 +109,7 @@
       },
 
       "dependsOn": [
+        "[concat('Microsoft.Network/storageAccounts/', parameters('diagnosticsStorageAccountName')]",
         "[concat('Microsoft.Network/publicIpAddresses/', parameters('virtualMachineName'), copyIndex(1), '-PIP1')]",
         "[concat('Microsoft.Network/networkSecurityGroups/', parameters('networkSecurityGroupName'))]"
       ],
