@@ -35,9 +35,6 @@
     "diagnosticsStorageAccountName": {
       "value": "vmsdiag496"
     },
-    "diagnosticsStorageAccountId": {
-      "value": "/subscriptions/{SUBSCRIPTION_ID}/resourceGroups/{RESOURCE_GROUP}/providers/Microsoft.Storage/storageAccounts/{LOWERCASE_STORAGE_ACCOUNT_NAME}"
-    },
     "subnetName": {
       "value": "default"
     },
