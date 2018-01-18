@@ -146,7 +146,7 @@
         "publicIpAllocationMethod": "[parameters('publicIpAddressType')]"
       },
       "sku": {
-        "name": "[parameters('publicIpAddressSku')]"
+        "name": "Basic"
       }
     },
     {
