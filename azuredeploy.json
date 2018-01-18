@@ -24,28 +24,13 @@
     "virtualNetworkName": {
       "type": "string"
     },
-    "networkInterfaceName": {
-      "type": "string"
-    },
     "networkSecurityGroupName": {
       "type": "string"
     },
     "adminPassword": {
       "type": "securestring"
     },
-    "diagnosticsStorageAccountName": {
-      "type": "string"
-    },
     "subnetName": {
-      "type": "string"
-    },
-    "publicIpAddressName": {
-      "type": "string"
-    },
-    "publicIpAddressType": {
-      "type": "string"
-    },
-    "publicIpAddressSku": {
       "type": "string"
     }
   },
