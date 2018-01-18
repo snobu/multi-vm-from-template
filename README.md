@@ -1,6 +1,6 @@
 # Multi VM deployment from managed disk custom image
 
-[![Deploy to Azure](http://azuredeploy.net/deploybutton.svg)](https://deploy.azure.com/?repository=https://github.com/snobu/multi-vm-from-template?ptmpl=azuredeploy.parameters.json)
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.svg)](href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsnobu%2Fmulti-vm-from-template%2Fmaster%2Fazuredeploy.json") 
 
 
 <a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fsnobu%2Fmulti-vm-from-template%2Fmaster%2Fazuredeploy.json" target="_blank">
