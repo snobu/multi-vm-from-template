@@ -55,10 +55,6 @@
         "count": "[parameters('virtualMachineCount')]"
       },
       "properties": {
-        "parametersLink": {
-          "uri":"https://raw.githubusercontent.com/snobu/multi-vm-from-template/master/azuredeploy.parameters.json",
-          "contentVersion":"1.0.0.0"
-       },
         "osProfile": {
           "computerName": "[concat(parameters('virtualMachineName'), copyIndex(1))]",
           "adminUsername": "[parameters('adminUsername')]",
@@ -103,7 +99,6 @@
       },
 
       "dependsOn": [
-        "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]",
         "[concat('Microsoft.Network/publicIpAddresses/', parameters('virtualMachineName'), copyIndex(1), '-PIP1')]",
         "[concat('Microsoft.Network/networkSecurityGroups/', parameters('networkSecurityGroupName'))]"
       ],
