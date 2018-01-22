@@ -13,3 +13,10 @@ For MS Internal Portal (**ms**.portal.azure.com), use this one:
 </a>
 
 This template allows you to deploy one or more VMs using a managed disk custom image as source.
+
+## Usage:
+
+1. Create resource group "X"
+2. Create Virtual Network in resource group "X"
+3. Create Subnet in Virtual Network in resource group "X"
+4. Deploy template, use full resourceId URI as value for `imageId` (for example: `/subscriptions/{SUBSCRIPTION_ID}/resourceGroups/{RESOURCE_GROUP}/providers/Microsoft.Compute/images/{IMAGE_NAME}`)
