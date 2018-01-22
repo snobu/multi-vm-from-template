@@ -15,6 +15,10 @@
     "virtualMachineName": {
       "type": "string"
     },
+    "imageId": {
+      "type": "string",
+      "value": "/subscriptions/{SUBSCRIPTION_ID}/resourceGroups/{RESOURCE_GROUP}/providers/Microsoft.Compute/images/{IMAGE_NAME}"
+    },
     "virtualMachineSize": {
       "type": "string"
     },
@@ -32,9 +36,6 @@
     },
     "subnetName": {
       "type": "string"
-    },
-    "diagnosticsStorageAccountName": {
-      "type": "string"
     }
   },
   "variables": {
@@ -48,7 +49,6 @@
       "apiVersion": "2016-04-30-preview",
       "location": "[parameters('location')]",
       "dependsOn": [
-        "[concat('Microsoft.Storage/storageAccounts/', parameters('diagnosticsStorageAccountName'))]",
         "[concat('Microsoft.Network/networkInterfaces/', concat(parameters('virtualMachineName'), copyIndex(1), '-NIC1'))]"
       ],
       "copy": {
@@ -89,12 +89,6 @@
               "id": "[resourceId('Microsoft.Network/networkInterfaces', concat(parameters('virtualMachineName'), copyIndex(1), '-NIC1'))]"
             }
           ]
-        },
-        "diagnosticsProfile": {
-          "bootDiagnostics": {
-            "enabled": true,
-            "storageUri": "[reference(resourceId('Microsoft.Storage/storageAccounts', parameters('diagnosticsStorageAccountName')), '2015-06-15').primaryEndpoints['blob']]"
-          }
         }
       }
     },
