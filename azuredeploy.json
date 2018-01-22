@@ -73,7 +73,7 @@
         },
         "storageProfile": {
           "imageReference": {
-            "id": "[parameters('imageId')]"
+            "id": "[resourceId('Microsoft.Compute/images', 'imageId')]"
           },
           "osDisk": {
             "name": "[concat(parameters('virtualMachineName'), copyIndex(1))]",
