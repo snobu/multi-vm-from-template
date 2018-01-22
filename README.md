@@ -21,4 +21,4 @@ This template allows you to deploy one or more VMs using a managed disk custom i
 3. Create Subnet in Virtual Network in resource group "X"
 4. Deploy template, use values from steps `1`, `2`, `3`, and use full resourceId URI as `imageId` (for example: `/subscriptions/{SUBSCRIPTION_ID}/resourceGroups/{RESOURCE_GROUP}/providers/Microsoft.Compute/images/{IMAGE_NAME}`)
 
-### IMPORTANT NOTE: This will only work with an image captured from a _managed disk_ **
+### IMPORTANT NOTE: This will only work with an image captured from a _managed disk_
