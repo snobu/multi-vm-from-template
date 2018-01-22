@@ -16,8 +16,7 @@
       "type": "string"
     },
     "imageId": {
-      "type": "string",
-      "value": "/subscriptions/{SUBSCRIPTION_ID}/resourceGroups/{RESOURCE_GROUP}/providers/Microsoft.Compute/images/{IMAGE_NAME}"
+      "type": "string"
     },
     "virtualMachineSize": {
       "type": "string"
